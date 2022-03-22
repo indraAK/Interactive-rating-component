@@ -35,9 +35,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  max-width: 45rem;
+  max-width: 44rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 1.6rem;
 }
 
 .container > * {
@@ -102,7 +102,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 2.3rem;
 }
 
@@ -179,5 +179,15 @@ button {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .rating-card {
+    padding: 3rem 2rem;
+  }
+
+  .feedback-card {
+    padding: 4rem 2rem 5rem;
   }
 }
